@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<div style="height: 80vh;">
+  <mat-toolbar style="background-color:rgb(103, 136, 179)">
+    <mat-toolbar-row>
+      <nav class="navbar">
+        <mat-toolbar-row>
+          <button mat-button routerLink="/" style="font-size: 30px">𝕮𝖔𝖗𝖔𝖓𝖆 Tracker</button>
+          
+          <span class="spacer"></span>
+          <button mat-button style="font-size: 20px" class="add"><a href="https://www.youtube.com/watch?v=i0ZabxXmH4Y">What is COVID-19</a> </button>
+          <button mat-button style="font-size: 20px" class="add"><a href="https://www.youtube.com/watch?v=U8r3oTVMtQ0">Symptoms</a> </button>
+          <button mat-button style="font-size: 20px" class="add"><a href="https://www.youtube.com/watch?v=-Fdo_HT3X80">Precaustions</a> </button>
+        </mat-toolbar-row>
+      </nav>
+      <!-- <span class="menu-spacer"></span>
+      <div fxShow="true" fxHide.lt-md>
+        <button *ngIf="router.url !='/login' && router.url !='/register'" mat-button [routerLink]="['/dashboard']" id="homepage">Home</button>
+        <button *ngIf="router.url !='/login' && router.url !='/register'" mat-button [routerLink]="['favourite']" id="homepage">My Favourite Books</button>
+        <button *ngIf="router.url !='/login' && router.url !='/register'" mat-button [routerLink]="['recommendation']" id="homepage">My Recommendations</button>
+        <button *ngIf="router.url !='/login' && router.url !='/register'" mat-button [routerLink]="['recommendedbyothers']" id="homepage">Recommended by others</button>
+        <button *ngIf="router.url !='/login' && router.url !='/register'" mat-button [routerLink]="['/search']" id="homepage">Search Books</button>
+        <button *ngIf="router.url !='/login' && router.url !='/register'" mat-button (click)="logout()" id="logout">Logout</button>
+      </div> -->
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-sidenav-container fxFlexFill>
+    <mat-sidenav #sidenav style="width:150px; background-color:rgb(212, 212, 212)">
+      <mat-nav-list>
+        <button *ngIf="router.url !='/login' && router.url !='/register'" mat-button [routerLink]="['/dashboard']" id="homepage">Home</button>
+        <button *ngIf="router.url !='/login' && router.url !='/register'" mat-button [matMenuTriggerFor]="menu" id="menu">Menu
+          <mat-icon id="menuicon">more_vert</mat-icon>
+        </button>
+        <!-- <mat-menu #menu="matMenu">
+          <button class="searchbtn" mat-menu-item [routerLink]="['/search']" id="searchbtn">Search books</button>
+          <button mat-menu-item [routerLink]="['/favourite']" id="favourite">My Favourite Books</button>
+          <button mat-menu-item [routerLink]="['/recommendation']" id="recommendation">My Recommendations</button>
+          <button mat-menu-item [routerLink]="['/recommendedbyothers']" id="recommendedbyothers">Recommended By Others</button>
+
+        </mat-menu> -->
+        <button *ngIf="router.url !='/login' && router.url !='/register'" mat-button (click)="logout()" id="logout">Logout</button>
+      </mat-nav-list>
+    </mat-sidenav>
+
+  </mat-sidenav-container>
+</div>

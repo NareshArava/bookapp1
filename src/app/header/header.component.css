@@ -1,0 +1,49 @@
+.navbar-brand img{
+    height:3em;
+    width:10em;
+  }
+  .example-spacer {
+      flex: 1 1 auto;
+  }
+  #menuicon{
+      padding-left: 0;
+  }
+  #icon{
+    color: rgb(0, 0, 0)
+  }
+  #icon:hover{
+    color: rgb(0, 0, 0)
+  }
+  #homepage{
+    color: rgb(13, 14, 13)
+  }
+  #homepage:hover{
+    color: red
+  }
+  #menu{
+    color: rgb(0, 0, 0)
+  }
+  #menu:hover{
+    color: red
+  }
+  #menuicon{
+    color: rgb(0, 0, 0)
+  }
+  #menuicon:hover{
+    color:red
+  }
+  #searchbtn:hover{
+    color:black
+  }
+  #favourite:hover{
+    color:black
+  }
+  #logout{
+    color: rgb(0, 0, 0)
+  }
+  #logout:hover{
+    color:red
+  }
+  #tool{
+    background-color: indigo
+  }
