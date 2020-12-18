@@ -29,7 +29,7 @@ export class RegisterComponent implements OnInit {
         duration: 5000
       });
       this.router.navigate(['/login']);
-   /*  },
+     },
       error => {
         this.error = error;
         if (this.error.status = 409) {
@@ -45,7 +45,7 @@ export class RegisterComponent implements OnInit {
           this.snackbar.open(this.error, '', {
             duration: 5000
           });
-        } */
+        } 
       });
   }
 

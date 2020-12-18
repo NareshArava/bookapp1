@@ -12,6 +12,7 @@ import { MatSnackBar } from '@angular/material';
 export class LoginComponent implements OnInit {
   newUser: user;
   error: any;
+  msg='';
 
   constructor(private snackbar: MatSnackBar, private authService: AuthenticationService, private router: Router) {
     this.newUser = new user();
@@ -26,7 +27,12 @@ export class LoginComponent implements OnInit {
     this.authService.loginUser(this.newUser).subscribe((data) => {
       console.log("Logged in!!! ");
       console.log(data);
+      
     });
+    error=>{
+      console.log("error occured");
+  this.msg='Invalid Credentials!!';
+    }
       /* if (data['token']) {
         this.authService.setToken(data['token']);
         console.log('token', data['token']);
